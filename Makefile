@@ -2,7 +2,11 @@ install:
 	poetry install
 
 gendiff:
-	poetry run gendiff
+	poetry gendiff
 
 build:
-	poetry run gendiff
+	poetry build
+
+lint:
+	poetry run flake8 gendiff
+	poetry run flake8 tests
