@@ -2,7 +2,8 @@ install:
 	poetry install
 
 gendiff:
-	poetry run python3 -m gendiff.scripts.gendiff
+	poetry run python -m gendiff.scripts.main -h
+	poetry run gendiff -h
 
 build:
 	poetry build
