@@ -1,10 +1,10 @@
-"""Module for parsing"""
+"""Parser module"""
 
 import json
 import yaml
 
 
-def parse(data, format_name):
+def check_format(data, format_name):
     if format_name == '.json':
         return json.load(open(data))
     if format_name in ('.yml', '.yaml'):
