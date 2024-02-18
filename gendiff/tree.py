@@ -1,4 +1,10 @@
-def structure_tree(dict_1: dict, dict_2: dict) -> list:
+def make_tree(dict_1: dict, dict_2: dict) -> list:
+    """
+    make_tree is a difference dictionary of a special format
+    that describes what happened to each key in the given
+    dictionaries being compared: whether it was added,
+    changed, or deleted.
+    """
     keys = dict_1.keys() | dict_2.keys()
 
     result = []
@@ -22,7 +28,7 @@ def structure_tree(dict_1: dict, dict_2: dict) -> list:
             result.append({
                 'key': key,
                 'type': 'nested',
-                'children': structure_tree(child_1, child_2),
+                'children': make_tree(child_1, child_2),
             })
         elif child_1 == child_2:
             result.append({
@@ -39,10 +45,3 @@ def structure_tree(dict_1: dict, dict_2: dict) -> list:
             })
 
     return result
-
-
-def recurs_tree(dict_1: dict, dict_2: dict):
-    return {
-        'type': 'root',
-        'children': structure_tree(dict_1, dict_2)
-    }

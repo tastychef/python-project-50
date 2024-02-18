@@ -1,8 +1,9 @@
-from gendiff.cli import parser_args
-
+from gendiff.cli import parsing_args
+from gendiff.gendiff import generate_diff
 
 def main():
-    return parser_args()
+    first_file, second_file = parsing_args()
+    print(generate_diff(first_file, second_file))
 
 
 if __name__ == '__main__':
