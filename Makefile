@@ -5,6 +5,8 @@ gendiff:
 	poetry run python -m gendiff.cli:parser_args -h
 	poetry run gendiff -h
 
+`
+
 build:
 	poetry build
 
