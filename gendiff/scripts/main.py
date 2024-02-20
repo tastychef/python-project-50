@@ -1,17 +1,14 @@
-from gendiff.cli import parsing_args
-from gendiff.gendiff import generate_diff
+#!/usr/bin/env python3
+from gendiff.cli import parse_args_cli
+from gendiff import generate_diff
 
 
 def main():
-    """
-    основная функция, которая прогоняет
-    анализируемые данные через argpars
-    и def генератор отличий
-    Returns:
-
-    """
-    first_file, second_file = parsing_args()
-    print(generate_diff(first_file, second_file))
+    args = parse_args_cli()
+    print(generate_diff(
+        args.first_file,
+        args.second_file,
+        args.format))
 
 
 if __name__ == '__main__':
