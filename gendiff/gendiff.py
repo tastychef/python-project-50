@@ -1,4 +1,4 @@
-from gendiff.open_file import open_file
+from gendiff.parser import open_file
 from gendiff.gasket import gasket
 
 
