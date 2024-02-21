@@ -1,6 +1,6 @@
-dic = {1: 2}
-DI
-dic2 = {'1': '2'}
-dic3 = dict(A='2')
-dic3 = dict(one=2)
-DF
+import itertools
+
+letters = ['a', 'b', 'c']
+perms = itertools.permutations(letters)
+a = perms
+print(a)

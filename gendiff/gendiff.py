@@ -1,5 +1,5 @@
-from gendiff.parser import open_file
 from gendiff.gasket import gasket
+from gendiff.parser import open_file
 
 
 def generate_diff(file_path1, file_path2):
@@ -8,4 +8,3 @@ def generate_diff(file_path1, file_path2):
         open_file(file_path2)
     )
     print(differences)
-
