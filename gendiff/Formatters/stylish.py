@@ -29,7 +29,7 @@ def get_diff_stylish(diff_list, level=0):
 
 
 def format_data(data, indent):
-    """Parses the data. Returns it in the correct format as a string."""
+    """Анализирует данные. Возвращает его в правильном формате в виде строки"""
     if type(data) is dict:
         indent += '    '
         result = '{\n'
