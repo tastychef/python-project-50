@@ -1,9 +1,8 @@
 install:
 	poetry install
 
-gendiffchik:
-	poetry run python -m gendiff.cli:parser_args -h
-	poetry run gendiff -h
+gendiff:
+	poetry run gendiff
 
 build:
 	poetry build
