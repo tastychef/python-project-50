@@ -1,8 +1,8 @@
 # python-package
 
-[![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-boilerplates/python-package/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/maintainability)](https://codeclimate.com/github/hexlet-boilerplates/python-package/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/python-package/test_coverage)
+[![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/tastychef/python-project-50/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f795081623c9d03c0295/maintainability)](https://codeclimate.com/github/tastychef/python-project-50/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f795081623c9d03c0295/test_coverage)](https://codeclimate.com/github/tastychef/python-project-50/test_coverage)
 
 ### Links
 
