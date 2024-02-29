@@ -1,5 +1,5 @@
-from gendiff.Formatters.stylish import stylish
-from gendiff.Formatters.json import format_json
+from gendiff.formatters.stylish import stylish
+from gendiff.formatters.json_f import format_json
 
 
 def format_diff(list_diff, format_name):
