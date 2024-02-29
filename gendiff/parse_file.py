@@ -1,7 +1,7 @@
-
 import json
-import yaml
 from pathlib import Path
+
+import yaml
 
 
 def get_dict_from_file(path_file):
@@ -11,9 +11,7 @@ def get_dict_from_file(path_file):
 
 
 def open_file(path_file, file_extension):
-    if file_extension.lower() == '.json':
-        with open(path_file) as f:
-            return json.load(f)
-    elif file_extension.lower() == '.yml' or file_extension.lower() == '.yaml':
-        with open(path_file) as f:
-            return yaml.safe_load(f)
+    if file_extension == '.json':
+        return json.load(open(path_file))
+    if file_extension in ('.yml', '.yaml'):
+        return yaml.safe_load(open(path_file))
