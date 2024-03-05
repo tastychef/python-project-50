@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Show difference between two data files"
-authors = ["alekseenkolesha@yandex.ru>"]
+authors = ['tastychef', "alekseenkolesha@yandex.ru>"]
 
 packages = [
   { include = "gendiff" },
