@@ -2,8 +2,8 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Show difference between two data files"
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+authors = ["alekseenkolesha@yandex.ru>"]
+
 packages = [
   { include = "gendiff" },
 ]
@@ -11,8 +11,10 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.8"
 PyYAML = "^6.0"
-pytest = "^7.1.0"
+
+[tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
+pytest = "^7.0.1"
 pytest-cov = "^3.0.0"
 
 [build-system]
