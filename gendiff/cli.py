@@ -1,5 +1,7 @@
 import argparse
+
 '''Функция для вывода справки'''
+
 
 def parse():
     parser = argparse.ArgumentParser(
