@@ -14,3 +14,5 @@ lint:
 test:
 	poetry run pytest
 
+stylysh:
+	poetry run gendiff file1.json file2.json
