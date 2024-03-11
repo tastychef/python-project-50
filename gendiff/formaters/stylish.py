@@ -4,6 +4,7 @@ DEFAULT_INDENT = 4
 
 
 def to_str(value: Any, depth: int) -> str:
+    """Преобразует список различий в формат словаря. Возвращает строку."""
     if isinstance(value, dict):
         lines = ['{']
         for key, nested_value in value.items():
@@ -27,6 +28,10 @@ def line_forming(dictionary: dict, key: Any, depth: int, sign: str) -> str:
 
 
 def build_stylish_iter(diff: dict, depth=0) -> str:
+    """Разбирает данные. Возвращает их в правильном формате в виде строки.
+    Строит словарь различий специального формата, описывающий, что произошло.
+    к каждому ключу в данных сравниваемых словарях: был ли он добавлен,
+    изменен или удален, а также соответствующие значения словаря."""
     lines = ['{']
     for dictionary in diff:
         if dictionary['operation'] == 'same':

@@ -6,6 +6,8 @@ from gendiff.data import prepare_data
 
 def generate_diff(path_file1: str, path_file2: str,
                   formater: str = 'stylish') -> str:
+    """Создать различия между двумя файлами в выбранном формате.
+        Возврачает строку."""
     data1, format1 = prepare_data(path_file1)
     data2, format2 = prepare_data(path_file2)
     parced_data1 = parse(data1, format1)

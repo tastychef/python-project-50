@@ -1,4 +1,5 @@
 def build_diff(parced_data1: dict, parced_data2: dict):
+    """Построение внутреннего древовидного представления"""
     diff = list()
     sorted_keys = sorted(
         list(set(parced_data1.keys()) | set(parced_data2.keys()))

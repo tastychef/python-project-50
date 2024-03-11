@@ -5,6 +5,7 @@ from gendiff.cli import parse
 
 
 def main():
+    """Старт начинается здесь."""
     args = parse()
     print(
         generate_diff(args.first_file, args.second_file, formater=args.format))

@@ -2,6 +2,7 @@ from typing import Any, Union
 
 
 def to_str(value: Any) -> [Union[str, int]]:
+    """Разбирает данные узла. Возвращает их в правильном формате в виде строки."""
     if isinstance(value, dict):
         return "[complex value]"
     if isinstance(value, bool):
@@ -14,6 +15,7 @@ def to_str(value: Any) -> [Union[str, int]]:
 
 
 def build_plain_iter(diff: dict, path="") -> str:
+    """Анализ узлов. Возвращает список с изменениями."""
     lines = list()
     for dictionary in diff:
         property = f"{path}{dictionary['key']}"

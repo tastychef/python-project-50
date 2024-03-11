@@ -4,6 +4,7 @@ import argparse
 
 
 def parse():
+    """Разбор аргументов из командной строки пользователя"""
     parser = argparse.ArgumentParser(
         description='Compares two configuration files and shows a difference.'
     )

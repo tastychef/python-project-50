@@ -4,6 +4,7 @@ from gendiff.formaters.json import render_json
 
 
 def get_formatter(formater):
+    """Форматирует список отличий в указанном формате. Возвращае строку."""
     if formater == 'stylish':
         return render_stylish
     if formater == 'plain':
