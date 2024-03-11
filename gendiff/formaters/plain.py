@@ -2,7 +2,8 @@ from typing import Any, Union
 
 
 def to_str(value: Any) -> [Union[str, int]]:
-    """Разбирает данные узла. Возвращает их в правильном формате в виде строки."""
+    """Разбирает данные узла. Возвращает их
+    в правильном формате в виде строки."""
     if isinstance(value, dict):
         return "[complex value]"
     if isinstance(value, bool):
